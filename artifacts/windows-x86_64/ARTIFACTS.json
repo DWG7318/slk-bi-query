@@ -3,45 +3,46 @@
     "parts": [
       {
         "path": "payload.zip",
-        "sha256": "bc7139bbfed90d22de63e7fb8c10ba5f5ac2600391f3a7cc921fff4597d6a834",
-        "size": 1298621
+        "sha256": "8d1cddb7a0a2fa2174b486fbc66d3ec92066bf46473ef2038fd14bd37785ba66",
+        "size": 1298951
       }
     ],
-    "sha256": "bc7139bbfed90d22de63e7fb8c10ba5f5ac2600391f3a7cc921fff4597d6a834",
-    "size": 1298621
+    "sha256": "8d1cddb7a0a2fa2174b486fbc66d3ec92066bf46473ef2038fd14bd37785ba66",
+    "size": 1298951
   },
   "build": {
+    "bi": "Unchanged BI1.1.6 reused byte-for-byte from official v4.5.6 package, not rebuilt.",
     "commands": [
-      "cargo test/build --release --locked --offline -j1 for standalone slk-state-cli, slk-bi-query, slk-cargo using immutable core 65ecc00b43d73da305e4809789ff709c39b183de",
-      "Copy-Item verified byte-identical BI1.1.6 from official v4.5.5 package SHA256 51f751b574832088d2ca847516b82b5dfa7a5e34ecfb2a2bc14b30ccbdc47f7d",
-      "python scripts/build_transport_zipapp.py --output .codex/release-artifacts/slk-transport.pyz"
+      "E:\\Codex-Workflows\\SLK\\slk-4.5.7-output\\build-native.ps1 -Phase consumers",
+      "E:\\Codex-Workflows\\SLK\\slk-4.5.6\\.codex\\venv\\Scripts\\python.exe E:\\Codex-Workflows\\SLK\\slk-4.5.7/scripts/build_transport_zipapp.py --output E:\\Codex-Workflows\\SLK\\slk-4.5.7-output\\release-artifacts/slk-transport.pyz"
     ],
-    "independent_core": "65ecc00b43d73da305e4809789ff709c39b183de",
-    "provenance": "BUILD-PROVENANCE.json",
-    "release": "v4.5.6",
+    "independent_core": "743a6a32e3c2f5edd2b4d497b15764c6e0ee3712",
+    "local_fetch": "Per-process Git URL rewrite only: unpublished independent core fetched from file:///D:/SLK; no persistent config or remote write.",
+    "publication": "local candidate; not remotely published or installed",
     "source_hash_mode": "sha256-raw-selected-build-inputs",
-    "toolchains": [
+    "toolchain": [
+      "cargo 1.94.0 (85eff7c80 2026-01-15)",
       "rustc 1.94.0 (4a4ef493e 2026-03-02)",
-      "Python 3.14"
+      "3.14.0 (tags/v3.14.0:ebf955d, Oct  7 2025, 10:15:03) [MSC v.1944 64 bit (AMD64)]"
     ]
   },
   "payload": [
     {
       "path": "BUILD-PROVENANCE.json",
-      "sha256": "957598726fdc1153de55ece96e48a41cb05b0d2e79ec2324b77c1b44c7708a77",
-      "size": 24931
+      "sha256": "e194065763862d5e78a3d2ee6448fa34b73b968578de8550b38c757095d4558f",
+      "size": 25331
     },
     {
       "path": "bin/slk-bi-query.exe",
-      "sha256": "97716f5fb33eec406520095b39eb5f8eacbd9d6bff3beecf74b81c0ab5054289",
-      "size": 2574336
+      "sha256": "deb6f0c7f2221f5bed84dcb3aefd72e52a8f1bf428e89bc2bbe2f9037d4ddb4d",
+      "size": 2575360
     }
   ],
-  "product_version": "4.5.6",
+  "product_version": "4.5.7",
   "schema_version": "slk.tool-artifacts/v1",
   "source_sha256": {
-    "Cargo.lock": "759616932379abf8f207ea4d0c461ecf5affdd7ca18674caa417c25e75ca9c14",
-    "Cargo.toml": "ff0acc745bc084324f8aea1dd6063d0587e97e153ec68d839c8f1792b8bb0491",
+    "Cargo.lock": "d72be42d78f1f8632806292fa7ad6dd3a1417c580b4110b77215cb26e235f217",
+    "Cargo.toml": "591817daf6cf5590293fffa7e386fdb35f63e0d45f1dda31cd00ecdf5befbd62",
     "LICENSE": "0f2472d7dac181baa6a0e0c96df5e097099083b577151f029d5cced7270377a7",
     "README.md": "882ff1ce8bb3a2465625ec674fbe217685194c9af186c97e54e1add3e5820445",
     "src/main.rs": "89a16f9a393658a7bf62ec772559ce8374167d4019ef6a7b142c073341ec5c7b",
